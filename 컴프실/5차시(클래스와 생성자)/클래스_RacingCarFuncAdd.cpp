@@ -14,7 +14,7 @@ namespace CAR_CONST{
     };
 }
 
-// 클래스 정의
+// 클래스 선언
 class Car{
     // 이어서 등장하는 변수와 함수는 private에 해당하는 범위 내에서(클래스 내에서만) 접근 가능.
     private:
