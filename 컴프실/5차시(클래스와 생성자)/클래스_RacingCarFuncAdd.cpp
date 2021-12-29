@@ -76,8 +76,9 @@ void Car::Break(){
 
 int main(){
     Car run99; // 구조체 변수의 선언 및 초기화
-    run99.InitMembers("run99",100);
-    run99.Accel(); // 구조체 run99에 존재하는 accel 함수를 호출하고 있음. 구조체 내에 선언된 변수에 접근하는 방법과 동일한 방식으로 함수의 호출이 이루어짐.
+    run99.InitMembers("run99",100); // 초기화 목적으로 initmemers 함수 호출하고 있음. 이 함수는 Id정보와 연료의  게이지 정보를 전달 받아서 초기화되는 형태로 정의되었음. 단, 변수 curSpeed는 무조건 0으로 초기화 되도록 정의됨.
+    // 함수호출이 가능한 이유는 함수가 모두 public으로 선언되었기 때문.
+    run99.Accel(); 
     run99.Accel();
     run99.Accel();
     run99.ShowCarState();
